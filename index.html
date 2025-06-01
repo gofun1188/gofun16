@@ -18,718 +18,1019 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1837792223687084&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <meta charset="UTF-8">
-  <title>GOFUN - 線上娛樂新選擇</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Noto Sans TC', "Microsoft JhengHei", sans-serif;
-    }
-    
-    html, body {
-      width: 100%;
-      height: 100%;
-      background: #000;
-      color: #fff;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-    }
-    
-    a {
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.3s ease;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFun X MT真人</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .container {
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #0a0a1a 0%, #10344a 100%);
-      overflow: hidden;
-      padding-bottom: 30px;
-    }
-    
+        body {
+            font-family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
+            padding-bottom: 100px;
+        }
 
-    .container:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: 
-        radial-gradient(circle at 10% 10%, rgba(0, 229, 255, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 90% 90%, rgba(0, 153, 204, 0.1) 0%, transparent 40%),
-        linear-gradient(90deg, rgba(10, 67, 99, 0.05) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(10, 67, 99, 0.05) 1px, transparent 1px);
-      background-size: 100%, 100%, 20px 20px, 20px 20px;
-      pointer-events: none;
-      z-index: 0;
-    }
-    
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .header-logo {
-      height: auto;
-      max-width: 180px;
-      filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.5));
-    }
-    
-    .profile-section {
-      position: relative;
-      padding: 30px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: rgba(0, 20, 40, 0.4);
-      margin-bottom: 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .profile-section::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 40%;
-      background: linear-gradient(to top, rgba(0, 20, 40, 0.8), transparent);
-      z-index: 0;
-    }
-    
-    .profile-content {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-    
-    .profile-image-container {
-      position: relative;
-      margin-bottom: 20px;
-    }
-    
-    .profile-image {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 5px solid #00e5ff;
-      box-shadow: 0 0 35px rgba(0, 229, 255, 0.7);
-      object-fit: cover;
-      background: linear-gradient(45deg, #2193b0, #6dd5ed);
-    }
-    
-    .profile-status {
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
-      width: 35px;
-      height: 35px;
-      background: #00ff4c;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 0 15px rgba(0, 255, 76, 0.7);
-    }
-    
-    .profile-name {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #fff;
-      text-shadow: 0 0 12px rgba(0, 229, 255, 0.7);
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-      margin-top: 15px;
-    }
-    
-    .profile-title {
-      font-size: 1.2rem;
-      color: #00e5ff;
-      background: rgba(0, 229, 255, 0.1);
-      padding: 8px 20px;
-      border-radius: 25px;
-      margin-bottom: 20px;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(0, 229, 255, 0.3);
-    }
-    
-    .profile-stats {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 5px;
-    }
-    
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .stat-value {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #00e5ff;
-    }
-    
-    .stat-label {
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.7);
-    }
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
 
-    .section {
-      margin: 0 15px 20px;
-      border-radius: 16px;
-      overflow: hidden;
-      background: rgba(0, 20, 40, 0.6);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(0, 229, 255, 0.15);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    
-    .section-header {
-      background: rgba(0, 30, 60, 0.7);
-      padding: 12px 15px;
-      border-bottom: 1px solid rgba(0, 229, 255, 0.2);
-    }
-    
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #00e5ff;
-      margin: 0;
-      display: flex;
-      align-items: center;
-    }
-    
-    .section-title::before {
-      content: '';
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: #00e5ff;
-      border-radius: 50%;
-      margin-right: 10px;
-      box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
-    }
-    
-    .section-content {
-      padding: 15px;
-    }
-    
+        .particle {
+            position: absolute;
+            background: rgba(0, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
 
-    .platform-intro {
-      display: flex;
-      align-items: center;
-      padding: 15px;
-    }
-    
-    .platform-intro-label {
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #00e5ff;
-      margin-right: 15px;
-      white-space: nowrap;
-    }
-    
-    .platform-intro-content {
-      flex: 1;
-    }
-    
-    .game-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #00e5ff;
-      text-shadow: 0 0 5px rgba(0, 229, 255, 0.7);
-      margin-bottom: 5px;
-      line-height: 1.3;
-    }
-    
-    .subtitle {
-      font-size: 1rem;
-      color: #fff;
-      display: block;
-      padding: 5px 10px;
-      border-radius: 30px;
-      background: linear-gradient(90deg, rgba(0, 229, 255, 0.2), rgba(0, 153, 204, 0.2));
-      width: fit-content;
-      border: 1px solid rgba(0, 229, 255, 0.3);
-      box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
-    }
-    
-    .promo-text {
-      font-size: 1.05rem;
-      margin-bottom: 15px;
-      line-height: 1.4;
-      font-weight: 500;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      background: rgba(0, 229, 255, 0.05);
-      padding: 10px 15px;
-      border-radius: 8px;
-      border-left: 3px solid #00e5ff;
-      transition: all 0.3s ease;
-    }
-    
-    .promo-text:last-child {
-      margin-bottom: 0;
-    }
-    
-    .promo-text:before {
-      content: '»';
-      color: #00e5ff;
-      margin-right: 10px;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+            50% { transform: translateY(-120px) rotate(180deg); opacity: 1; }
+        }
 
-    .video-container {
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid rgba(0, 229, 255, 0.3);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-      position: relative;
-    }
-    
-    .video-container:before {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px;
-      border-radius: 14px;
-      background: linear-gradient(45deg, rgba(0, 229, 255, 0.5), transparent, rgba(0, 229, 255, 0.5));
-      z-index: -1;
-      animation: rotate 6s linear infinite;
-    }
-    
-    @keyframes rotate {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    .video-container video {
-      width: 100%;
-      height: auto;
-      display: block;
-      background: #000;
-    }
-    
-    .reason-item {
-      margin-bottom: 15px;
-      line-height: 1.4;
-      color: #fff;
-      padding: 12px;
-      border-radius: 8px;
-      background: rgba(0, 229, 255, 0.05);
-      border-left: 3px solid #00e5ff;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .reason-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .reason-item::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to right, rgba(0, 229, 255, 0.1), transparent);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    .reason-item:active::after {
-      opacity: 1;
-    }
-    
-    .reason-number {
-      font-weight: bold;
-      color: #FFD700;
-      display: inline-block;
-      margin-right: 8px;
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
-      text-align: center;
-      background: rgba(255, 215, 0, 0.1);
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
-    }
-    
-    .reason-detail {
-      padding-left: 32px;
-      display: block;
-      color: rgba(0, 229, 255, 0.8);
-      font-size: 0.9rem;
-      margin-top: 5px;
-      font-weight: 300;
-    }
-    
-    .cta-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin: 0 15px 20px;
-    }
-    
-    .cta-btn {
-      display: block;
-      background: linear-gradient(90deg, #0070aa, #00e5ff);
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.2rem;
-      padding: 16px 20px;
-      border-radius: 50px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0, 229, 255, 0.4);
-      border: none;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      letter-spacing: 1px;
-    }
-    
-    .cta-btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transform: translateX(-100%);
-      transition: transform 0.5s ease;
-    }
-    
-    .cta-btn:active::before {
-      transform: translateX(100%);
-    }
-    
-    .cta-btn:active {
-      transform: scale(0.98);
-    }
-    
-    .contact-btn {
-      display: block;
-      background: linear-gradient(90deg, #005580, #0099cc);
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.2rem;
-      padding: 16px 20px;
-      border-radius: 50px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0, 153, 204, 0.4);
-      border: none;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      letter-spacing: 1px;
-    }
-    
-    .contact-btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transform: translateX(-100%);
-      transition: transform 0.5s ease;
-    }
-    
-    .contact-btn:active::before {
-      transform: translateX(100%);
-    }
-    
-    .contact-btn:active {
-      transform: scale(0.98);
-    }
-    
-    .contact-info {
-      text-align: center;
-      margin: 0 15px;
-      font-size: 1rem;
-      color: #00e5ff;
-      background: rgba(0, 20, 40, 0.6);
-      padding: 15px;
-      border-radius: 12px;
-      border: 1px dashed rgba(0, 229, 255, 0.4);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    
-    .contact-info-highlight {
-      font-weight: 700;
-      color: #FFD700;
-      font-size: 1.2rem;
-      display: block;
-      margin-top: 5px;
-    }
+        .header {
+            padding: 15px 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    .particles {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 0;
-    }
-    
-    .particle {
-      position: absolute;
-      display: block;
-      pointer-events: none;
-      border-radius: 50%;
-    }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
 
-    @keyframes float {
-      0% {
-        transform: translateY(0) translateX(0);
-        opacity: 0.1;
-      }
-      50% {
-        opacity: 0.5;
-      }
-      100% {
-        transform: translateY(-100vh) translateX(20px);
-        opacity: 0.1;
-      }
-    }
-    
+        .main-logo {
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+            transition: all 0.3s ease;
+        }
 
-    .glow {
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(0, 229, 255, 0.2) 0%, transparent 70%);
-      pointer-events: none;
-      z-index: 0;
-    }
-    
+        .main-logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.8));
+        }
 
-    @keyframes blink {
-      0%, 100% { opacity: 0.1; }
-      50% { opacity: 0.7; }
-    }
-    
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    .wave {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 15px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.25' fill='%2300e5ff'%3E%3C/path%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' opacity='.5' fill='%2300e5ff'%3E%3C/path%3E%3Cpath d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='%2300e5ff' opacity='.75'%3E%3C/path%3E%3C/svg%3E");
-      background-size: 1200px 100%;
-      z-index: 0;
-      animation: wave 12s linear infinite;
-      opacity: 0.2;
-    }
-    
-    @keyframes wave {
-      0% { background-position-x: 0; }
-      100% { background-position-x: 1200px; }
-    }
-  </style>
+        .banner-section {
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot.active {
+            background: #00ffff;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+        }
+
+        .promo-banner {
+            margin: 30px 0;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .promo-banner-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        .models-section {
+            margin: 60px 0 40px 0;
+            text-align: center;
+        }
+
+        .section-title-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title-image {
+            max-height: 80px;
+            width: auto;
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+            transition: all 0.3s ease;
+        }
+
+        .section-title-image:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.8));
+        }
+
+        .model-gallery {
+            display: none;
+        }
+
+        .app-showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px 0;
+            gap: 80px;
+        }
+
+        .phone-container {
+            position: relative;
+        }
+
+        .phone-glow {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            right: -30px;
+            bottom: -30px;
+            background: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: phone-pulse 3s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes phone-pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .phone-image {
+            width: 350px;
+            height: auto;
+            filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5));
+            animation: phone-float 4s ease-in-out infinite;
+        }
+
+        @keyframes phone-float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+
+        .phone-screen-content {
+            position: absolute;
+            top: 0%;
+            left: -20%;
+            width: 84%;
+            height: 88%;
+            border-radius: 35px;
+            overflow: hidden;
+        }
+
+        .phone-model-carousel {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .phone-model-carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            flex-shrink: 0;
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        .app-features {
+            max-width: 500px;
+        }
+
+        .feature-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00ffff 0%, #0099cc 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+            position: relative;
+            font-family: 'Microsoft JhengHei', 'Arial', sans-serif;
+        }
+
+        .feature-title::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent 0%, #00ffff 20%, #00ffff 80%, transparent 100%);
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+        }
+
+        .feature-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #0099cc 50%, transparent 100%);
+            border-radius: 1px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(0, 20, 40, 0.8) 0%, rgba(0, 40, 80, 0.6) 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            position: relative;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #00ffff 0%, #0099cc 100%);
+            border-radius: 2px 0 0 2px;
+        }
+
+        .feature-item:hover {
+            transform: translateX(12px);
+            border-color: rgba(0, 255, 255, 0.5);
+            box-shadow: 0 12px 35px rgba(0, 255, 255, 0.2);
+            background: linear-gradient(135deg, rgba(0, 30, 60, 0.9) 0%, rgba(0, 50, 100, 0.7) 100%);
+        }
+
+        .feature-number {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #00ffff;
+            margin-right: 20px;
+            min-width: 45px;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .feature-number::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(0, 150, 200, 0.2));
+            border-radius: 12px;
+            z-index: -1;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-title-text {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: #b3d9ff;
+            line-height: 1.5;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .floating-register-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            background: linear-gradient(45deg, #00ffff, #ffffff, #ffaa00);
+            border-radius: 50px;
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.6);
+            transition: all 0.4s ease;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: floating-glow 2s ease-in-out infinite;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+        }
+
+        @keyframes floating-glow {
+            0%, 100% {
+                box-shadow: 0 15px 30px rgba(0, 255, 255, 0.6);
+            }
+            50% {
+                box-shadow: 0 20px 40px rgba(0, 255, 255, 0.8);
+            }
+        }
+
+        .floating-register-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transition: left 0.6s;
+        }
+
+        .floating-register-btn:hover::before {
+            left: 100%;
+        }
+
+        .floating-register-btn:hover {
+            transform: translateX(-50%) translateY(-8px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffaa00);
+        }
+
+        .cta-section {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .app-showcase {
+                flex-direction: column;
+                gap: 50px;
+                margin: 60px 0;
+            }
+
+            .phone-image {
+                width: 320px;
+            }
+
+            .feature-title {
+                font-size: 2.4rem;
+                text-align: center;
+            }
+
+            .app-features {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            body {
+                padding-bottom: 120px;
+            }
+
+            .header {
+                padding: 12px 0;
+            }
+
+            .main-logo {
+                height: 50px;
+            }
+
+            .banner-section {
+                margin: 25px 0;
+            }
+
+            .carousel img {
+                height: 250px;
+                object-fit: contain;
+                background: #000;
+            }
+
+            .carousel-container {
+                border-radius: 15px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            }
+
+            .nav-dot {
+                width: 10px;
+                height: 10px;
+            }
+
+            .carousel-nav {
+                bottom: 15px;
+                gap: 8px;
+            }
+
+            .models-section {
+                margin: 40px 0 30px 0;
+            }
+
+            .section-title-image {
+                max-height: 60px;
+                max-width: 90%;
+            }
+
+            .app-showcase {
+                gap: 40px;
+                margin: 50px 0;
+            }
+
+            .phone-image {
+                width: 320px;
+            }
+
+            .phone-glow {
+                top: -25px;
+                left: -25px;
+                right: -25px;
+                bottom: -25px;
+            }
+
+            .feature-title {
+                font-size: 2.4rem;
+                margin-bottom: 30px;
+                letter-spacing: 2px;
+            }
+
+            .feature-item {
+                padding: 20px;
+                margin-bottom: 25px;
+                border-radius: 15px;
+            }
+
+            .feature-number {
+                font-size: 1.6rem;
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+                min-width: 40px;
+            }
+
+            .feature-title-text {
+                font-size: 1.2rem;
+            }
+
+            .feature-description {
+                font-size: 1rem;
+            }
+
+            .floating-register-btn {
+                bottom: 15px;
+                left: 15px;
+                right: 15px;
+                transform: none;
+                width: calc(100% - 30px);
+                text-align: center;
+                padding: 16px 20px;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+            }
+
+            .floating-register-btn:hover {
+                transform: translateY(-5px) scale(1.02);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+
+            body {
+                padding-bottom: 100px;
+            }
+
+            .main-logo {
+                height: 45px;
+            }
+
+            .carousel img {
+                height: 200px;
+                object-fit: contain;
+                background: #000;
+            }
+
+            .carousel-container {
+                border-radius: 12px;
+            }
+
+            .section-title-image {
+                max-height: 50px;
+            }
+
+            .phone-image {
+                width: 280px;
+            }
+
+            .feature-title {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .feature-item {
+                padding: 18px;
+                margin-bottom: 20px;
+            }
+
+            .feature-number {
+                font-size: 1.4rem;
+                width: 35px;
+                height: 35px;
+                min-width: 35px;
+            }
+
+            .feature-title-text {
+                font-size: 1.1rem;
+            }
+
+            .feature-description {
+                font-size: 0.95rem;
+            }
+
+            .floating-register-btn {
+                padding: 14px 18px;
+                font-size: 1.1rem;
+                bottom: 12px;
+                left: 12px;
+                right: 12px;
+                width: calc(100% - 24px);
+            }
+        }
+
+        @media (max-width: 360px) {
+            .phone-image {
+                width: 260px;
+            }
+
+            .feature-title {
+                font-size: 1.8rem;
+                letter-spacing: 0.5px;
+            }
+
+            .floating-register-btn {
+                padding: 12px 15px;
+                font-size: 1rem;
+            }
+
+            .carousel img {
+                height: 180px;
+                object-fit: contain;
+                background: #000;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @media (max-width: 768px) {
+            .nav-dot, .floating-register-btn {
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+
+            body {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .phone-glow {
+                animation: phone-pulse 4s ease-in-out infinite;
+            }
+
+            .phone-image {
+                animation: phone-float 5s ease-in-out infinite;
+            }
+
+            @keyframes phone-float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+            }
+
+            .feature-item:hover {
+                transform: translateX(5px);
+            }
+        }
+
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="particles" id="particles">
+    <div class="bg-animation" id="bgAnimation"></div>
 
-    </div>
-    
-    <div class="wave"></div>
-    
     <header class="header">
-      <img src="images/logo.png" alt="GOFUN!" class="header-logo">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="GoFun Logo" class="main-logo" style="height: 60px; width: auto;">
+        </div>
     </header>
-    
-    <section class="profile-section">
-      <div class="profile-content">
-        <div class="profile-image-container">
-          <img src="images/photo_2025-03-22_19-43-17.jpg" alt="子涵" class="profile-image">
-          <span class="profile-status"></span>
-        </div>
-        <h2 class="profile-name">子涵</h2>
-        <div class="profile-title">您的專屬娛樂顧問</div>
-        
-        <div class="profile-stats">
-          <div class="stat-item">
-            <div class="stat-value">88U</div>
-            <div class="stat-label">紅包金額</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-value">1.2%</div>
-            <div class="stat-label">最高返水</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-value">20%</div>
-            <div class="stat-label">續充獎勵</div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-  </section>
-    
-  <div class="cta-buttons">
-    <a href="https://97y.me/QYTVI" class="cta-btn">立即註冊</a>
-    <a href="https://t.me/hong_2537" class="contact-btn">聯絡子涵</a>
-  </div>
-  
-  <div class="contact-info">
-    註冊好聯繫子涵
-    <span class="contact-info-highlight">帶你領88U紅包</span>
-  </div>
-</div>
-
-
-    
-    <section class="section">
-      <div class="section-header" style="display: flex; align-items: center; flex-wrap: wrap;">
-        <h1 class="section-title" style="margin-right: 15px; white-space: nowrap;">平台介紹：</h1>
-        <div style="flex: 1;">
-          <span style="color: #00e5ff; font-weight: 700; font-size: 1.3rem;">亞州第一USDT娛樂平台</span>
-          <span style="display: block; color: #fff; font-size: 0.9rem; margin-top: 5px;">在家玩手機就能發財 線上娛樂最佳選擇</span>
-        </div>
-      </div>
-      <div class="section-content" style="margin-top: 15px;">
-        <div class="video-container">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZNecMQrxIws?autoplay=1&loop=1&playlist=ZNecMQrxIws&mute=1" title="平台介绍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section">
-      <div class="section-header">
-        <h3 class="section-title">專屬優惠</h3>
-      </div>
-      <div class="section-content">
-        <p class="promo-text">免實名不限IP 不管你在哪都能發財</p>
-        <p class="promo-text">開始玩！立即贈88USDT紅包🧧</p>
-        <p class="promo-text">點擊下方註冊開始玩</p>
-      </div>
-    </section>
-    
-    <section class="section">
-      <div class="section-header" style="display: flex; justify-content: space-around; padding: 12px 0;">
-        <h3 style="flex: 1; text-align: center; color: #00e5ff; font-weight: 700; font-size: 1.1rem;">註冊教學</h3>
-        <h3 style="flex: 1; text-align: center; color: #00e5ff; font-weight: 700; font-size: 1.1rem;">提款教學</h3>
-      </div>
-      <div class="section-content">
-        <div style="display: flex; gap: 15px; margin-bottom: 10px;">
-          <div style="flex: 1;">
-            <div class="video-container">
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/PTCTuttqDsE?autoplay=1&loop=1&playlist=PTCTuttqDsE&mute=1" title="註冊教學" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container">
+        <section class="banner-section fade-in">
+            <div class="carousel-container">
+                <div class="carousel" id="bannerCarousel">
+                    <img src="images/webp_out/1.webp" alt="Banner 1">
+                    <img src="images/webp_out/2.webp" alt="Banner 2">
+                    <img src="images/webp_out/3.webp" alt="Banner 3">
+                    <img src="images/webp_out/4.webp" alt="Banner 4">
+                    <img src="images/webp_out/8.webp" alt="Banner 8">
+                </div>
+                <div class="carousel-nav" id="bannerNav">
+                    <div class="nav-dot active" data-slide="0"></div>
+                    <div class="nav-dot" data-slide="1"></div>
+                    <div class="nav-dot" data-slide="2"></div>
+                    <div class="nav-dot" data-slide="3"></div>
+                    <div class="nav-dot" data-slide="4"></div>
+                </div>
             </div>
-          </div>
-          <div style="flex: 1;">
-            <div class="video-container">
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/M704TPsbUXY?autoplay=1&loop=1&playlist=M704TPsbUXY&mute=1" title="提款教學" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="models-section">
+            <div class="section-title-container">
+                <img src="images/GoFun_X_MT真人_largeX.webp" alt="GoFun X MT真人" class="section-title-image">
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section">
-      <div class="section-header">
-        <h3 class="section-title">為什麼選擇GoFun</h3>
-      </div>
-      <div class="section-content">
-        <div class="reason-item">
-          <span class="reason-number">1</span>引進全球所有大館遊戲
-          <span class="reason-detail">你玩不到的都在這</span>
-        </div>
-        <div class="reason-item">
-          <span class="reason-number">2</span>優惠福利超越所有USDT平台
-          <span class="reason-detail">最高返水1.2% 每日續充簽到再送20%！</span>
-        </div>
-        <div class="reason-item">
-          <span class="reason-number">3</span>流水達標！網紅小模任你選
-          <span class="reason-detail">不管你在哪 空降到你身邊</span>
-        </div>
-      </div>
+        </section>
 
-      <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const particlesContainer = document.getElementById('particles');
-      const particleCount = 20;
-      
+        <section class="app-showcase">
+            <div class="phone-container slide-in-right">
+                <div class="phone-glow"></div>
+                <img src="images/1_phone-1.webp" alt="GoFun Mobile App" class="phone-image">
+                <div class="phone-screen-content">
+                    <div class="phone-model-carousel" id="phoneModelCarousel"></div>
+                </div>
+            </div>
+            <div class="app-features slide-in-left">
+                <h2 class="feature-title">最佳優惠</h2>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-number">1.</span>
+                        <div class="feature-content">
+                            <div class="feature-title-text">首存 100% 加碼｜最高 1288 U</div>
+                            <div class="feature-description">僅需 20 倍流水，不限遊戲館別</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-number">2.</span>
+                        <div class="feature-content">
+                            <div class="feature-title-text">每日返水最高 1.2%</div>
+                            <div class="feature-description">輸贏都回饋，不設上限</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-number">3.</span>
+                        <div class="feature-content">
+                            <div class="feature-title-text">註冊就抽 88888 U</div>
+                            <div class="feature-description">登入即抽，人人均有機會中獎</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-number">4.</span>
+                        <div class="feature-content">
+                            <div class="feature-title-text">週週任務獎金</div>
+                            <div class="feature-description">完成指定任務，再領額外紅包</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('span');
-        particle.className = 'particle';
-        
+        <section style="display: none;">
+        </section>
+    </div>
 
-        const size = Math.random() * 4 + 1;
-        particle.style.width = size + 'px';
-        particle.style.height = size + 'px';
-        particle.style.left = Math.random() * 100 + 'vw';
-        particle.style.top = Math.random() * 100 + 'vh';
-        
+    <a href="https://97y.me/5DbNf" class="floating-register-btn" target="_blank" id="registerBtn" data-fb-track="CompleteRegistration">立即註冊</a>
 
-        const colors = ['#00e5ff', '#0099cc', '#1ec3ff', '#007bff'];
-        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-        
+    <script>
+        async function updateLinkByLocation() {
+            const registerBtn = document.getElementById('registerBtn');
 
-        const duration = Math.random() * 15 + 10;
-        particle.style.animation = `float ${duration}s linear infinite`;
-        particle.style.opacity = Math.random() * 0.3 + 0.1;
-        
-        particlesContainer.appendChild(particle);
-      }
-      
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                const countryCode = data.country_code;
 
-      for (let i = 0; i < 5; i++) {
-        const glow = document.createElement('div');
-        glow.className = 'glow';
-        
+                if (countryCode === 'KH' || countryCode === 'CN') {
+                    registerBtn.href = 'https://97y.me/5FhUL';
+                } else {
+                    registerBtn.href = 'https://97y.me/5DbNf';
+                }
 
-        glow.style.left = Math.random() * 100 + 'vw';
-        glow.style.top = Math.random() * 100 + 'vh';
-        
+            } catch (error) {
+                const language = navigator.language || navigator.userLanguage;
+                if (language.includes('zh-CN') || language.includes('km')) {
+                    registerBtn.href = 'https://97y.me/5FhUL';
+                } else {
+                    registerBtn.href = 'https://97y.me/5DbNf';
+                }
+            }
+        }
 
-        const size = Math.random() * 100 + 100;
-        glow.style.width = size + 'px';
-        glow.style.height = size + 'px';
-        
+        async function updateLinkByLocationBackup() {
+            const registerBtn = document.getElementById('registerBtn');
 
-        const duration = Math.random() * 5 + 3;
-        glow.style.animation = `blink ${duration}s ease-in-out infinite`;
-        
-        particlesContainer.appendChild(glow);
-      }
-    });
-  </script>
+            try {
+                const response = await fetch('https://ipinfo.io/json');
+                const data = await response.json();
+                const country = data.country;
+
+                if (country === 'KH' || country === 'CN') {
+                    registerBtn.href = 'https://good.com/en';
+                }
+
+            } catch (error) {
+                // 備用檢測失敗時不做任何動作
+            }
+        }
+
+        function createParticles() {
+            const bgAnimation = document.getElementById('bgAnimation');
+            const particleCount = window.innerWidth < 768 ? 30 : 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                bgAnimation.appendChild(particle);
+            }
+        }
+
+        let bannerCurrentSlide = 0;
+        const bannerCarousel = document.getElementById('bannerCarousel');
+        const bannerDots = document.querySelectorAll('#bannerNav .nav-dot');
+        const bannerTotalSlides = 5;
+
+        function showBannerSlide(index) {
+            bannerCurrentSlide = index;
+            bannerCarousel.style.transform = `translateX(-${index * 100}%)`;
+
+            bannerDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextBannerSlide() {
+            bannerCurrentSlide = (bannerCurrentSlide + 1) % bannerTotalSlides;
+            showBannerSlide(bannerCurrentSlide);
+        }
+
+        bannerDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showBannerSlide(index));
+        });
+
+        setInterval(nextBannerSlide, 4000);
+
+        function createPhoneModelGallery() {
+            const phoneModelCarousel = document.getElementById('phoneModelCarousel');
+            const imageFiles = [
+                'images/mt/1 (1).webp', 'images/mt/1 (4).webp', 'images/mt/1 (5).webp', 'images/mt/1 (6).webp', 'images/mt/1 (7).webp',
+                'images/mt/1 (8).webp', 'images/mt/1 (9).webp', 'images/mt/1 (11).webp', 'images/mt/1 (14).webp', 'images/mt/1 (16).webp',
+                'images/mt/1 (20).webp', 'images/mt/1 (22).webp', 'images/mt/1 (25).webp', 'images/mt/1 (27).webp', 'images/mt/1 (29).webp',
+                'images/mt/1 (32).webp', 'images/mt/1 (35).webp', 'images/mt/1 (36).webp', 'images/mt/1 (37).webp', 'images/mt/1 (38).webp',
+                'images/mt/1 (39).webp', 'images/mt/1 (40).webp', 'images/mt/1 (42).webp', 'images/mt/1 (43).webp', 'images/mt/1 (46).webp',
+                'images/mt/1 (47).webp', 'images/mt/1 (49).webp'
+            ];
+
+            imageFiles.forEach((src, index) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = `GoFun 美女主播 ${index + 1}`;
+                img.loading = 'lazy';
+                phoneModelCarousel.appendChild(img);
+            });
+        }
+
+        let phoneModelCurrentSlide = 0;
+        const phoneModelTotalSlides = 27;
+
+        function showPhoneModelSlide(index) {
+            const phoneModelCarousel = document.getElementById('phoneModelCarousel');
+            phoneModelCurrentSlide = index;
+            phoneModelCarousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextPhoneModelSlide() {
+            phoneModelCurrentSlide = (phoneModelCurrentSlide + 1) % phoneModelTotalSlides;
+            showPhoneModelSlide(phoneModelCurrentSlide);
+        }
+
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight * 0.8) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // 修改后的注册按钮点击事件处理，包含Facebook标准事件追踪
+        function setupRegisterButtonTracking() {
+            const registerBtn = document.getElementById('registerBtn');
+
+            registerBtn.addEventListener('click', function(e) {
+                // Facebook标准事件追踪 - CompleteRegistration
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'CompleteRegistration', {
+                        content_name: 'GoFun X MT真人注册',
+                        content_category: '在线娱乐',
+                        value: 0.00,
+                        currency: 'USD',
+                        content_ids: ['gofun_register'],
+                        contents: [{
+                            id: 'gofun_register',
+                            quantity: 1
+                        }]
+                    });
+
+                    // 也可以同时追踪Lead事件，获得更多数据
+                    fbq('track', 'Lead', {
+                        content_name: 'GoFun注册按钮点击',
+                        content_category: '游戏平台',
+                        value: 0.00,
+                        currency: 'USD'
+                    });
+                }
+
+                // 原有的涟漪效果代码
+                const ripple = document.createElement('div');
+                ripple.style.position = 'absolute';
+                ripple.style.background = 'rgba(255, 255, 255, 0.6)';
+                ripple.style.borderRadius = '50%';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.left = (e.offsetX - 10) + 'px';
+                ripple.style.top = (e.offsetY - 10) + 'px';
+                ripple.style.width = '20px';
+                ripple.style.height = '20px';
+
+                this.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            createPhoneModelGallery();
+            handleScrollAnimation();
+            updateLinkByLocation();
+            setTimeout(updateLinkByLocationBackup, 2000);
+            setInterval(nextPhoneModelSlide, 2500);
+
+            // 设置注册按钮的Facebook事件追踪
+            setupRegisterButtonTracking();
+        });
+
+        window.addEventListener('scroll', handleScrollAnimation);
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        if (window.innerWidth <= 768) {
+            bannerCarousel.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            bannerCarousel.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = touchStartX - touchEndX;
+
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        bannerCurrentSlide = (bannerCurrentSlide + 1) % bannerTotalSlides;
+                    } else {
+                        bannerCurrentSlide = (bannerCurrentSlide - 1 + bannerTotalSlides) % bannerTotalSlides;
+                    }
+                    showBannerSlide(bannerCurrentSlide);
+                }
+            }
+        }
+    </script>
 </body>
 </html>
